@@ -1,0 +1,567 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Le coût du changement</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..800&family=Inter:wght@400;600;700&display=swap"><style>*{margin:0}body{font:32px/1.2 sans-serif;background:#222}body>section{width:1920px!important;height:1080px!important;overflow:hidden!important;box-sizing:border-box!important;position:relative;isolation:isolate}aside{display:none!important}h1{font-size:96px;font-weight:600}h2{font-size:64px;font-weight:600}h3{font-size:44px;font-weight:600}table{width:100%;border-collapse:separate;border-spacing:0}th,td{padding:.35em .6em;text-align:left}x-shape,x-icon{display:block}</style><style>section{box-sizing:border-box;padding:128px 128px 160px;background:#0C1019;color:#F4EFE6;font-family:'Inter',Arial,sans-serif;display:flex;flex-direction:column;counter-increment:page}
+section.deep{background:linear-gradient(160deg,#172036 0%,#0A0D15 70%)}
+section.paper{background:#F4EFE6;color:#1A1F2C}
+section.accent{background:#F2BE6E;color:#14110B}
+section.center{justify-content:center}
+
+.eyebrow{font-size:24px;font-weight:600;letter-spacing:4px;color:#F2BE6E;margin:0 0 20px}
+.paper .eyebrow{color:#8A5208}
+.accent .eyebrow{color:#5A3A08}
+.title{font-family:'Archivo',Arial,sans-serif;font-size:72px;font-weight:800;line-height:1.08;letter-spacing:-1px;color:#F4EFE6;margin:0 0 48px}
+.paper .title{color:#1A1F2C}
+.lead{font-size:32px;line-height:1.45;color:#AEB6C6;margin:0}
+.paper .lead{color:#4B5364}
+.kicker{font-family:'Archivo',Arial,sans-serif;font-size:40px;font-weight:700;line-height:1.25;color:#F2BE6E;margin:48px 0 0}
+.paper .kicker{color:#8A5208}
+.hl{color:#F2BE6E}
+.paper .hl{color:#8A5208}
+.c-amber{color:#F2BE6E}
+.c-blue{color:#8DB1EE}
+.foot{position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;line-height:1.3;color:#7D879A;margin:0}
+.paper .foot{color:#5E6677}
+.accent .foot{color:#5A3A08}
+
+.rise{animation:rise 700ms cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0) * 110ms)}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}}
+.glow{animation:glow 1200ms ease-out both}
+@keyframes glow{from{opacity:0;filter:blur(12px)}}
+
+.dict{font-family:'Archivo',Arial,sans-serif;font-size:136px;font-weight:800;letter-spacing:-3px;line-height:1.05;color:#F2BE6E;margin:0;text-shadow:0 0 56px rgba(242,190,110,0.45)}
+.pos{font-size:32px;font-style:italic;color:#8C95A8;margin:24px 0 64px}
+.defn{font-size:44px;line-height:1.3;color:#F4EFE6;margin:0 0 24px}
+.defn-dim{color:#AEB6C6}
+
+.duo{display:grid;grid-template-columns:1fr 120px 1fr;align-items:stretch}
+.card{box-sizing:border-box;background:#141A28;border:2px solid #2A3245;border-radius:24px;padding:48px}
+.card-hot{border-color:#F2BE6E}
+.card-k{font-size:24px;font-weight:600;letter-spacing:4px;color:#8DB1EE;margin:0 0 16px}
+.k-amber{color:#F2BE6E}
+.card-h{font-family:'Archivo',Arial,sans-serif;font-size:56px;font-weight:800;line-height:1.1;color:#F4EFE6;margin:0 0 24px}
+.card-p{font-size:30px;line-height:1.45;color:#AEB6C6;margin:0}
+.mid{display:flex;justify-content:center;align-items:center}
+.arrow{width:72px;height:36px;background:#F2BE6E}
+
+.tl{display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr;gap:24px}
+.tl-i{border-top:4px solid #2A3245;padding-top:28px}
+.tl-hot{border-top-color:#F2BE6E}
+.tl-y{font-family:'Archivo',Arial,sans-serif;font-size:40px;font-weight:800;color:#F2BE6E;margin:0 0 12px}
+.tl-t{font-size:26px;line-height:1.4;color:#C9D0DD;margin:0}
+
+.split{display:grid;grid-template-columns:600px 1fr;gap:96px;align-items:start}
+.def-term{font-family:'Archivo',Arial,sans-serif;font-size:44px;font-weight:800;color:#F2BE6E;margin:0 0 24px}
+.def-body{font-size:32px;line-height:1.45;color:#F4EFE6;margin:0 0 24px}
+.def-src{font-size:24px;color:#7D879A;margin:0}
+.ice{display:flex;flex-direction:column}
+.tip{align-self:center;width:440px;box-sizing:border-box;text-align:center;background:#F2BE6E;color:#14110B;font-family:'Archivo',Arial,sans-serif;font-weight:800;font-size:32px;padding:22px;border-radius:18px 18px 6px 6px;margin:0}
+.water{border:none;border-top:3px dashed #8DB1EE;margin:20px 0 10px}
+.wl-row{display:flex;justify-content:space-between;margin:0 0 20px}
+.wl{font-size:24px;color:#8DB1EE;margin:0}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.chip{background:#161D2E;border:2px solid #2A3245;border-radius:14px;padding:16px 24px;font-size:28px;color:#C9D0DD;margin:0}
+
+.chart-row{display:grid;grid-template-columns:1040px 1fr;gap:80px;align-items:start}
+.chart{position:relative;width:1040px;height:560px}
+.ax{position:absolute;width:200px;font-size:24px;text-align:center;color:#7D879A;margin:0}
+.yl{position:absolute;width:56px;font-size:24px;text-align:right;color:#7D879A;margin:0}
+.cl{position:absolute;width:280px;font-family:'Archivo',Arial,sans-serif;font-size:30px;font-weight:700;margin:0}
+.big-x{position:absolute;width:200px;text-align:right;font-family:'Archivo',Arial,sans-serif;font-size:48px;font-weight:800;color:#F2BE6E;margin:0}
+.legend{display:flex;flex-direction:column;gap:48px}
+.lg-h{font-family:'Archivo',Arial,sans-serif;font-size:40px;font-weight:800;margin:0 0 12px}
+.lg-p{font-size:28px;line-height:1.45;color:#AEB6C6;margin:0}
+
+.stat-row{display:grid;grid-template-columns:700px 1fr;gap:64px;align-items:center}
+.big{font-family:'Archivo',Arial,sans-serif;font-size:280px;font-weight:800;line-height:0.95;letter-spacing:-6px;color:#8A5208;margin:0}
+.big-text{font-size:40px;line-height:1.35;font-weight:600;color:#1A1F2C;margin:0 0 40px}
+.facts{display:flex;flex-direction:column;gap:20px}
+.fact{font-size:30px;line-height:1.4;color:#4B5364;margin:0;padding-left:24px;border-left:4px solid #8A5208}
+
+.bars{display:flex;flex-direction:column;gap:36px}
+.bar-l{font-size:28px;font-weight:600;color:#AEB6C6;margin:0 0 12px}
+.track{background:#161D2E;border-radius:14px;height:88px;display:flex}
+.fill{box-sizing:border-box;background:#F2BE6E;border-radius:14px;height:88px;display:flex;align-items:center;padding:0 28px}
+.fill-b{background:#8DB1EE}
+.fill-v{font-family:'Archivo',Arial,sans-serif;font-size:40px;font-weight:800;color:#14110B;margin:0;white-space:nowrap}
+
+.trio{display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px}
+.c-num{font-family:'Archivo',Arial,sans-serif;font-size:56px;font-weight:800;color:#F2BE6E;margin:0 0 12px}
+.c-h{font-family:'Archivo',Arial,sans-serif;font-size:40px;font-weight:800;line-height:1.15;color:#F4EFE6;margin:0 0 20px}
+.c-p{font-size:28px;line-height:1.45;color:#AEB6C6;margin:0 0 24px}
+.c-ref{font-size:24px;color:#8DB1EE;margin:0}
+
+.quad{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.q{box-sizing:border-box;background:#141A28;border:2px solid #2A3245;border-radius:24px;padding:36px 40px;display:flex;align-items:center;gap:32px}
+.q-n{font-family:'Archivo',Arial,sans-serif;font-size:96px;font-weight:800;color:#F2BE6E;margin:0;width:360px;white-space:nowrap;letter-spacing:-2px}
+.q-t{font-size:30px;line-height:1.35;color:#F4EFE6;margin:0}
+
+.sigs{display:flex;flex-direction:column}
+.sig{display:flex;align-items:center;gap:36px;padding:20px 0;border-top:2px solid #D8CFBE}
+.sig-n{font-family:'Archivo',Arial,sans-serif;font-size:40px;font-weight:800;color:#8A5208;margin:0;width:60px}
+.sig-t{font-size:34px;line-height:1.3;color:#1A1F2C;margin:0}
+
+.statement{font-family:'Archivo',Arial,sans-serif;font-size:120px;font-weight:800;line-height:1.02;letter-spacing:-3px;color:#14110B;margin:0 0 40px}
+.statement-sub{font-size:44px;line-height:1.35;color:#3A2A10;margin:0;width:1400px}
+
+.four{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:24px}
+.m{box-sizing:border-box;background:#141A28;border:2px solid #F2BE6E;border-radius:20px;padding:32px;display:flex;flex-direction:column}
+.m-promise{border-color:#8DB1EE}
+.m-tag{font-size:24px;font-weight:600;letter-spacing:3px;color:#F2BE6E;margin:0 0 16px}
+.m-tag-b{color:#8DB1EE}
+.m-n{font-family:'Archivo',Arial,sans-serif;font-size:80px;font-weight:800;line-height:1.05;letter-spacing:-2px;color:#F4EFE6;margin:0 0 16px;white-space:nowrap}
+.m-t{font-size:26px;line-height:1.4;color:#C9D0DD;margin:0 0 20px;flex:1}
+.m-s{font-size:24px;line-height:1.3;color:#7D879A;margin:0}
+
+.three{grid-template-columns:1fr 1fr 1fr}
+
+.vs2{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:start}
+.metr-col{box-sizing:border-box;padding-right:56px}
+.metr-col-r{box-sizing:border-box;padding-left:56px;border-left:2px solid #2A3245}
+.metr-l{font-size:24px;font-weight:600;letter-spacing:4px;color:#8DB1EE;margin:0 0 8px}
+.metr-l-a{color:#F2BE6E}
+.metr-n{font-family:'Archivo',Arial,sans-serif;font-size:240px;font-weight:800;line-height:1;letter-spacing:-6px;color:#8DB1EE;margin:0 0 16px;white-space:nowrap}
+.metr-n-a{color:#F2BE6E;text-shadow:0 0 64px rgba(242,190,110,0.55)}
+.metr-s{font-size:32px;line-height:1.35;color:#AEB6C6;margin:0}
+.punch{font-family:'Archivo',Arial,sans-serif;font-size:56px;font-weight:800;line-height:1.15;color:#F4EFE6;margin:56px 0 0}
+.fragment{opacity:0;transform:translateY(32px);transition:opacity 600ms ease,transform 600ms ease}
+.fragment.visible{opacity:1;transform:translateY(0)}
+
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.v{box-sizing:border-box;border-radius:24px;padding:44px;background:#141A28;border:3px solid #8DB1EE}
+.v-bad{border-color:#F2BE6E}
+.v-h{font-family:'Archivo',Arial,sans-serif;font-size:44px;font-weight:800;line-height:1.15;color:#F4EFE6;margin:0 0 24px}
+.v-list{font-size:30px;line-height:1.5;color:#AEB6C6;margin:0 0 28px;padding-left:36px}
+.v-r{font-family:'Archivo',Arial,sans-serif;font-size:36px;font-weight:800;margin:0}
+
+.tbl{width:100%;font-size:28px;color:#1A1F2C;font-family:'Inter',Arial,sans-serif}
+.tbl-head{background:#1A1F2C}
+.th-l{color:#F4EFE6;text-align:left;width:50%;padding:18px 28px}
+.band{background:#E9E2D4}
+
+.lock{display:grid;grid-template-columns:700px 1fr;gap:96px;align-items:center}
+.quote{font-family:'Archivo',Arial,sans-serif;font-size:56px;font-weight:800;line-height:1.15;color:#F2BE6E;margin:0 0 24px;text-shadow:0 0 40px rgba(242,190,110,0.35)}
+.quote-src{font-size:26px;font-style:italic;color:#8C95A8;margin:0}
+.steps{display:flex;flex-direction:column;gap:32px}
+.st{display:flex;gap:28px;align-items:flex-start}
+.st-icon{width:48px;height:48px;color:#8DB1EE}
+.st-h{font-family:'Archivo',Arial,sans-serif;font-size:32px;font-weight:800;color:#F4EFE6;margin:0 0 8px}
+.st-p{font-size:28px;line-height:1.4;color:#AEB6C6;margin:0}
+
+.todo{display:flex;align-items:center;gap:36px;padding:18px 0;border-top:2px solid #2A3245}
+.todo-n{font-family:'Archivo',Arial,sans-serif;font-size:40px;font-weight:800;color:#F2BE6E;margin:0;width:60px}
+.todo-t{font-size:32px;line-height:1.3;color:#F4EFE6;margin:0}
+.us{margin:40px 0 0;background:#141A28;border:2px dashed #8DB1EE;border-radius:18px;padding:24px 32px;font-size:28px;line-height:1.4;color:#C9D0DD}
+
+.fw-row{display:grid;grid-template-columns:960px 1fr;gap:80px;align-items:start}
+.fw-chart{position:relative;width:960px;height:500px}
+.fw-l{position:absolute;width:300px;font-family:'Archivo',Arial,sans-serif;font-size:28px;font-weight:700;margin:0}
+.fw-ax{position:absolute;width:360px;font-size:24px;color:#7D879A;margin:0}
+.fs{margin:0 0 28px}
+.fs-n{font-family:'Archivo',Arial,sans-serif;font-size:112px;font-weight:800;line-height:1;letter-spacing:-2px;color:#F2BE6E;margin:0 0 8px}
+.fs-t{font-size:28px;line-height:1.4;color:#C9D0DD;margin:0}
+.fw-q{font-family:'Archivo',Arial,sans-serif;font-size:36px;font-weight:700;line-height:1.25;color:#F4EFE6;margin:8px 0 8px}
+.fw-src{font-size:24px;color:#7D879A;margin:0}
+
+.tk-row{display:grid;grid-template-columns:680px 1fr;gap:80px;align-items:center}
+.tk-big{font-family:'Archivo',Arial,sans-serif;font-size:240px;font-weight:800;line-height:1;letter-spacing:-6px;color:#F2BE6E;margin:0 0 16px;white-space:nowrap;text-shadow:0 0 64px rgba(242,190,110,0.5)}
+.tk-sub{font-size:32px;line-height:1.35;color:#C9D0DD;margin:0}
+.cmp{border-top:2px solid #2A3245;padding:20px 0}
+.cmp-l{font-size:24px;font-weight:600;letter-spacing:2px;color:#8DB1EE;margin:0 0 8px}
+.cmp-v{font-family:'Archivo',Arial,sans-serif;font-size:48px;font-weight:800;color:#F4EFE6;margin:0;white-space:nowrap}
+
+.c-icon{width:56px;height:56px;color:#8DB1EE;margin:0 0 16px}
+
+.refs{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.ref-h{font-family:'Archivo',Arial,sans-serif;font-size:28px;font-weight:800;color:#F2BE6E;margin:0 0 16px}
+.ref-h2{margin-top:28px}
+.ref{font-size:24px;line-height:1.35;color:#C9D0DD;margin:0 0 14px}
+
+.closing-q{font-family:'Archivo',Arial,sans-serif;font-size:56px;font-weight:700;line-height:1.2;color:#F4EFE6;margin:0 0 20px;width:1500px}
+.closing-src{font-size:26px;color:#8C95A8;margin:0 0 80px}
+.closing{font-family:'Archivo',Arial,sans-serif;font-size:88px;font-weight:800;line-height:1.05;letter-spacing:-2px;color:#F2BE6E;margin:0;text-shadow:0 0 56px rgba(242,190,110,0.4)}
+
+.tl-y{font-size:48px}
+.tl-t{font-size:30px}
+.card{padding:56px}
+.c-h{font-size:44px}
+.c-p{font-size:30px}
+.q{padding:56px 48px}
+.q-n{font-size:112px;width:400px}
+.q-t{font-size:32px}
+.bars{gap:64px}
+.bar-l{font-size:32px}
+.track{height:128px}
+.fill{height:128px}
+.fill-v{font-size:56px}
+.m{padding:44px}
+.m-n{font-size:104px}
+.m-t{font-size:30px}
+.v{padding:56px}
+.v-h{font-size:48px}
+.v-list{font-size:34px}
+.v-r{font-size:40px}
+.tbl{font-size:32px}
+.tbl td{padding:24px 32px}
+.th-l{padding:24px 32px}
+.quote{font-size:64px}
+.steps{gap:48px}
+.st-h{font-size:36px}
+.st-p{font-size:30px}
+.st-icon{width:56px;height:56px}
+</style><style>.fragment{opacity:1;transform:none}</style></head><body>
+<section id="cover" class="deep center" data-transition="fade">
+<p class="eyebrow rise" style="--i:0">TECH TALK · 20 MIN</p>
+<h1 class="dict glow">coût du changement</h1>
+<p class="pos rise" style="--i:2">loc. nom. m. · de l’anglais <i>switching cost</i></p>
+<p class="defn rise" style="--i:3"><span class="hl">1.</span> Ce qu’on perd en quittant ce qu’on a construit.</p>
+<p class="defn rise" style="--i:4"><span class="hl">2.</span> Ce qu’on paie pour modifier ce qu’on a construit.</p>
+<p class="defn defn-dim rise" style="--i:5"><span class="hl">3.</span> Ce qui décide si l’IA vous accélère… ou vous enlise.</p>
+<aside>(≈ 45 s) On part d’une définition de dictionnaire, celle du switching cost : ce qu’on perd en quittant ce qu’on a construit. Et, côté logiciel, ce qu’on paie à chaque fois qu’on veut modifier ce qu’on a déjà construit. Et en 2026, c’est aussi ce qui décide si l’IA nous fait gagner du temps… ou si elle accélère nos problèmes. 20 minutes, deux parties : comprendre ce coût, puis le parallèle avec l’IA.</aside>
+</section>
+
+<section id="gta" class="deep">
+<p class="eyebrow rise" style="--i:0">AUJOURD’HUI, 19 NOVEMBRE 2026</p>
+<h2 class="title rise" style="--i:1">Le monde entier s’arrête pour un jeu vidéo</h2>
+<div class="tl">
+<div class="tl-i rise" style="--i:2"><p class="tl-y">2013</p><p class="tl-t">GTA V sort. Il sera porté sur trois générations de consoles.</p></div>
+<div class="tl-i tl-hot rise" style="--i:3"><p class="tl-y">Sept. 2022</p><p class="tl-t">Leak de ~90 vidéos d’une build de travail. Internet se moque des graphismes.</p></div>
+<div class="tl-i rise" style="--i:4"><p class="tl-y">Déc. 2023</p><p class="tl-t">Premier trailer : 90 M de vues en 24 h, record Guinness. Sortie annoncée : automne 2025.</p></div>
+<div class="tl-i rise" style="--i:5"><p class="tl-y">Mai 2025</p><p class="tl-t">Premier report, au 26 mai 2026.</p></div>
+<div class="tl-i rise" style="--i:6"><p class="tl-y">Nov. 2025</p><p class="tl-t">Second report, au 19 novembre 2026. L’action Take-Two perd ~8 %.</p></div>
+</div>
+<p class="kicker rise" style="--i:7">13 ans entre deux épisodes. Même avec des moyens hors normes, on n’échappe pas au coût du changement.</p>
+<p class="foot">Rockstar Games et Take-Two (annonces de mai et nov. 2025) · Guinness World Records (90,4 M de vues, 5 déc. 2023) · Reuters (Take-Two −8 % à la clôture, 7 nov. 2025) · ~90 vidéos : chiffre de presse, non confirmé par Rockstar.</p>
+<aside>(≈ 1 min) Aujourd’hui sort GTA VI. Treize ans après GTA V. Rappel de la frise : 2013, GTA V. 2022, un hacker fait fuiter environ 90 vidéos de développement, et internet se moque : « c’est moche », « ça ressemble à un jeu PS3 ». Fin 2023, le trailer explose les records. Puis deux reports : automne 2025 → mai 2026 → aujourd’hui. Même avec des moyens quasi illimités, changer un système de cette taille coûte cher, et de plus en plus cher.</aside>
+</section>
+
+<section id="gta-lecons">
+<p class="eyebrow rise" style="--i:0">TROIS LEÇONS DE GTA VI</p>
+<h2 class="title rise" style="--i:1">Ce que GTA VI dit du coût du changement</h2>
+<div class="trio">
+<div class="card rise" style="--i:2"><p class="c-num">01</p><h3 class="c-h">Le leak moqué</h3><p class="c-p">En 2022, internet juge une build de travail : animations brutes, textures manquantes. De l’extérieur, on ne voit que l’écran, jamais l’effort derrière.</p><p class="c-ref">→ la partie visible de l’iceberg</p></div>
+<div class="card rise" style="--i:3"><p class="c-num">02</p><h3 class="c-h">Ce qu’on perd en partant</h3><p class="c-p">GTA V a été porté sur trois générations de consoles et vendu pendant treize ans. Plus un existant rapporte, plus le quitter coûte cher.</p><p class="c-ref">→ le <i>switching cost</i></p></div>
+<div class="card rise" style="--i:4"><p class="c-num">03</p><h3 class="c-h">Changer à l’échelle</h3><p class="c-p">Plus un système est grand, plus un changement tardif coûte cher. Annoncé pour l’automne 2025, le jeu sort en novembre 2026 : deux reports, environ un an de décalage.</p><p class="c-ref">→ plus c’est tard, plus c’est cher</p></div>
+</div>
+<p class="kicker rise" style="--i:5">Notre code obéit à la même mécanique, sans le budget de Rockstar.</p>
+<p class="foot">Lectures proposées à partir des faits de la slide précédente, pas des déclarations de Rockstar.</p>
+<aside>(≈ 1 min) Trois leçons. Un : les moqueries du leak. Le public a jugé une build de dev comme un produit fini. C’est exactement ce qui arrive avec le coût du changement : de l’extérieur, on ne voit que l’écran, pas l’effort. Deux : le switching cost, notre définition de départ. Un jeu qui se vend encore sur trois générations de consoles, c’est un existant qu’on hésite à quitter. Trois : à cette échelle, chaque changement tardif se compte en mois. Et chez nous, c’est la même physique, à plus petite échelle.</aside>
+</section>
+
+<section id="iceberg">
+<h2 class="title rise" style="--i:0">La partie visible de l’iceberg</h2>
+<div class="split">
+<div class="rise" style="--i:1">
+<p class="def-term">Coût du changement</p>
+<p class="def-body">L’effort total pour introduire une modification dans un système existant : analyse, tests, vérifications, coordination, mise en production.</p>
+<p class="def-src">D’après QMates, 2026</p>
+</div>
+<div class="ice rise" style="--i:2">
+<p class="tip">Écrire le code</p>
+<hr class="water">
+<div class="wl-row"><p class="wl">visible</p><p class="wl">invisible, mais facturé</p></div>
+<div class="chips">
+<p class="chip">Comprendre l’existant</p>
+<p class="chip">Analyser l’impact</p>
+<p class="chip">Coordonner les équipes</p>
+<p class="chip">Tester et vérifier</p>
+<p class="chip">Relire et valider</p>
+<p class="chip">Déployer et surveiller</p>
+<p class="chip">Corriger les régressions</p>
+<p class="chip">Attendre les autres</p>
+</div>
+</div>
+</div>
+<aside>(≈ 1 min) Première idée clé : le coût du changement, ce n’est pas le temps de taper le code. Écrire le code, c’est la pointe de l’iceberg. Sous l’eau : comprendre l’existant, mesurer l’impact, se coordonner, tester, relire, déployer, corriger les régressions… et attendre. Retenez cette image, on y reviendra avec l’IA.</aside>
+</section>
+
+<section id="courbes">
+<h2 class="title rise" style="--i:0">Deux courbes, deux philosophies</h2>
+<div class="chart-row">
+<div class="chart rise" style="--i:1">
+<svg aria-label="Courbe du coût du changement selon la phase : la courbe de Boehm reste basse puis grimpe jusqu’à 100 fois en production ; la courbe de Beck reste presque plate." width="1040" height="560" viewBox="0 0 1040 560"><line x1="70" y1="500" x2="1020" y2="500" stroke="#3A4358" stroke-width="2"/><line x1="70" y1="30" x2="70" y2="500" stroke="#3A4358" stroke-width="2"/><path d="M120 492 C 560 488 840 430 1000 64" fill="none" stroke="#F2BE6E" stroke-width="8" stroke-linecap="round"/><path d="M120 470 C 400 436 700 424 1000 416" fill="none" stroke="#8DB1EE" stroke-width="8" stroke-linecap="round"/><circle cx="1000" cy="64" r="12" fill="#F2BE6E"/><circle cx="1000" cy="416" r="12" fill="#8DB1EE"/></svg>
+<p class="yl" style="left:0;top:474px">1×</p>
+<p class="big-x" style="left:760px;top:0">×100</p>
+<p class="cl c-amber" style="left:640px;top:150px">Boehm, 1981</p>
+<p class="cl c-blue" style="left:740px;top:436px">Beck, 1999</p>
+<p class="ax" style="left:70px;top:516px">Exigences</p>
+<p class="ax" style="left:277px;top:516px">Conception</p>
+<p class="ax" style="left:485px;top:516px">Code</p>
+<p class="ax" style="left:692px;top:516px">Tests</p>
+<p class="ax" style="left:840px;top:516px">Production</p>
+</div>
+<div class="legend">
+<div class="rise" style="--i:2"><h3 class="lg-h c-amber">Boehm, 1981</h3><p class="lg-p">Corriger un défaut après livraison coûte souvent 100× plus cher qu’en phase d’exigences (≈ 5× sur les petits systèmes).</p></div>
+<div class="rise" style="--i:3"><h3 class="lg-h c-blue">Beck, 1999</h3><p class="lg-p">Tests automatisés, refactoring continu, petites itérations : la courbe peut s’aplatir. C’est le pari de l’eXtreme Programming.</p></div>
+</div>
+</div>
+<p class="foot">Boehm (1981), <i>Software Engineering Economics</i> · Boehm &amp; Basili (2001), <i>IEEE Computer</i> 34(1) · Beck, K. (1999), <i>Extreme Programming Explained</i>, Addison-Wesley. Courbes schématiques.</p>
+<aside>(≈ 1 min 15) Deux visions historiques. Boehm, 1981 : plus un défaut est découvert tard, plus il coûte cher, jusqu’à 100 fois en production. Le chiffre est discuté, mais l’ordre de grandeur reste. Kent Beck, 1999, répond : si on investit dans les tests, le refactoring et les petits incréments, on peut garder la courbe presque plate. Toute la suite du talk, c’est : comment rester sur la courbe bleue.</aside>
+</section>
+
+<section id="fowler" class="deep">
+<p class="eyebrow rise" style="--i:0">MARTIN FOWLER · DESIGN STAMINA HYPOTHESIS</p>
+<h2 class="title rise" style="--i:1">La qualité interne se rembourserait en semaines</h2>
+<div class="fw-row">
+<div class="fw-chart rise" style="--i:2">
+<svg aria-label="Fonctionnalités livrées dans le temps : sans conception, on démarre vite puis on ralentit ; avec une bonne conception, on démarre plus lentement puis on dépasse, au bout de quelques semaines." width="960" height="500" viewBox="0 0 960 500"><line x1="80" y1="480" x2="940" y2="480" stroke="#3A4358" stroke-width="2"/><line x1="80" y1="30" x2="80" y2="480" stroke="#3A4358" stroke-width="2"/><line x1="607" y1="110" x2="607" y2="480" stroke="#7D879A" stroke-width="3" stroke-dasharray="10 10"/><path d="M80 480 C 300 300 500 230 900 200" fill="none" stroke="#F2BE6E" stroke-width="8" stroke-linecap="round"/><path d="M80 480 C 300 420 600 250 900 60" fill="none" stroke="#8DB1EE" stroke-width="8" stroke-linecap="round"/><circle cx="607" cy="232" r="14" fill="#F4EFE6"/></svg>
+<p class="fw-l c-amber" style="left:120px;top:250px">Sans conception</p>
+<p class="fw-l c-blue" style="left:600px;top:40px">Bonne conception</p>
+<p class="fw-ax" style="left:627px;top:330px;width:320px">Seuil : « des semaines, pas des mois »</p>
+<p class="fw-ax" style="left:96px;top:0">Fonctionnalités livrées</p>
+<p class="fw-ax" style="left:820px;top:440px;width:120px">Temps</p>
+</div>
+<div>
+<div class="fs rise" style="--i:3"><p class="fs-n">+124 %</p><p class="fs-t">de temps pour résoudre un ticket dans du code de faible qualité</p></div>
+<div class="fs rise" style="--i:4"><p class="fs-n">15×</p><p class="fs-t">plus de défauts dans ce même code</p></div>
+<p class="fw-q rise" style="--i:5">« Le coût d’une haute qualité interne est négatif. »</p>
+<p class="fw-src rise" style="--i:5">Martin Fowler, 2019 (trad.)</p>
+</div>
+</div>
+<p class="foot">Schéma d’après Fowler (2007), <i>Design Stamina Hypothesis</i>, une hypothèse de l’auteur · Fowler (2019), <i>Is High Quality Software Worth the Cost?</i> · Tornhill &amp; Borg (2022), <i>Code Red</i>, arXiv:2203.04374, 39 bases de code.</p>
+<aside>(≈ 1 min) Martin Fowler pose la même idée sous forme de pari : sans conception, on démarre plus vite, puis la courbe s’aplatit ; avec une bonne conception, on démarre un peu plus lentement… et on dépasse. Où est le croisement ? Selon lui, en général en quelques semaines, pas en mois. Et ce n’est plus seulement une intuition : Tornhill et Borg ont mesuré 39 bases de code. Dans le code de faible qualité, résoudre un ticket prend plus de deux fois plus de temps, avec 15 fois plus de défauts. D’où la phrase de Fowler : le « coût » de la qualité interne est négatif.</aside>
+</section>
+
+<section id="stripe" class="paper">
+<p class="eyebrow rise" style="--i:0">CE QUE ÇA COÛTE DÉJÀ</p>
+<h2 class="title rise" style="--i:1">Près de la moitié de la semaine</h2>
+<div class="stat-row">
+<p class="big rise" style="--i:2">42 %</p>
+<div class="rise" style="--i:3">
+<p class="big-text">du temps des développeurs part en maintenance : dette technique et mauvais code.</p>
+<div class="facts">
+<p class="fact">17,3 h sur une semaine de 41,1 h : dette technique 13,5 h + mauvais code 3,8 h</p>
+<p class="fact">≈ 85 Md$ par an dans le monde, pour le seul mauvais code</p>
+<p class="fact"><b>Étude scientifique :</b> 23 % du temps perdu à cause de la dette technique, mesuré sur plusieurs semaines</p>
+</div>
+</div>
+</div>
+<p class="foot">Stripe (2018), <i>The Developer Coefficient</i>, enquête (42 % = 17,3 / 41,1) · Besker, Martini &amp; Bosch (2019), <i>Journal of Systems and Software</i> 156, 41–61.</p>
+<aside>(≈ 45 s) Un chiffre pour ancrer. Stripe a interrogé des milliers de développeurs : 42 % de leur semaine part dans la maintenance, la dette technique et le mauvais code. Plus de 17 heures par semaine. Côté recherche, Besker, Martini et Bosch (Chalmers, 2019) ont suivi des développeurs semaine après semaine : 23 % de leur temps est perdu à cause de la dette technique, surtout en tests supplémentaires. Ce n’est pas du temps de création, c’est le prix du changement sur l’existant.</aside>
+</section>
+
+<section id="pareto">
+<h2 class="title rise" style="--i:0">La dette n’est pas partout. Elle est concentrée.</h2>
+<div class="bars">
+<div class="rise" style="--i:1"><p class="bar-l">Part du code</p><div class="track"><div class="fill fill-b" style="width:25%"><p class="fill-v">20–30 %</p></div></div></div>
+<div class="rise" style="--i:2"><p class="bar-l">Part du ralentissement</p><div class="track"><div class="fill" style="width:75%"><p class="fill-v">70–80 %</p></div></div></div>
+</div>
+<p class="kicker rise" style="--i:3">Pas besoin de tout réécrire : il faut trouver où ça coûte.</p>
+<p class="foot">Observation terrain de QMates (lead time des 20 dernières PR). Un ordre de grandeur, pas une étude publiée.</p>
+<aside>(≈ 45 s) Bonne nouvelle : le coût n’est pas uniforme. Selon QMates, 20 à 30 % du code concentre 70 à 80 % du ralentissement. C’est une observation de terrain, pas une étude, mais tout le monde la reconnaît : ces deux ou trois modules que personne ne veut toucher. On peut donc cibler.</aside>
+</section>
+
+<section id="causes">
+<h2 class="title rise" style="--i:0">Pourquoi ça grimpe : trois forces</h2>
+<div class="trio">
+<div class="card rise" style="--i:1"><x-icon name="Link" class="c-icon"></x-icon><p class="c-num">01</p><h3 class="c-h">Le couplage</h3><p class="c-p">Un « petit » changement traverse la base, les services, l’API et l’interface. Chaque point touché est un risque de régression.</p><p class="c-ref">Parnas, 1972 : isoler ce qui change</p></div>
+<div class="card rise" style="--i:2"><x-icon name="Users" class="c-icon"></x-icon><p class="c-num">02</p><h3 class="c-h">Les dépendances entre équipes</h3><p class="c-p">Le système finit par copier l’organisation qui le construit. Chaque frontière floue devient une réunion.</p><p class="c-ref">Loi de Conway, 1968</p></div>
+<div class="card rise" style="--i:3"><x-icon name="Clock" class="c-icon"></x-icon><p class="c-num">03</p><h3 class="c-h">La complexité accumulée</h3><p class="c-p">Les décisions rapides d’hier deviennent les contraintes d’aujourd’hui. Sans effort actif, la complexité monte.</p><p class="c-ref">Lois de Lehman, 1974–1980</p></div>
+</div>
+<p class="foot">Parnas (1972), <i>Communications of the ACM</i> 15(12) · Conway (1968), <i>Datamation</i> 14(4) · Lehman (1980), <i>Proceedings of the IEEE</i> 68(9).</p>
+<aside>(≈ 1 min) Trois forces font grimper le coût. Le couplage : tout est lié à tout. Les dépendances entre équipes : Conway nous dit que le système copie l’organisation, donc une frontière d’équipe floue devient une frontière de code floue, et une réunion. La complexité accumulée : Lehman l’a formalisé dans les années 70, un système qui évolue se complexifie, sauf si on travaille activement contre. Petit bonus, Brooks : ajouter des gens à un projet en retard le retarde encore.</aside>
+</section>
+
+<section id="dora" class="deep">
+<p class="eyebrow rise" style="--i:0">DORA · ÉQUIPES ÉLITE VS FAIBLE PERFORMANCE</p>
+<h2 class="title rise" style="--i:1">Vitesse et stabilité vont ensemble</h2>
+<div class="quad">
+<div class="q rise" style="--i:2"><p class="q-n">182×</p><p class="q-t">plus de déploiements</p></div>
+<div class="q rise" style="--i:3"><p class="q-n">127×</p><p class="q-t">lead time plus court, du commit à la prod</p></div>
+<div class="q rise" style="--i:4"><p class="q-n">2 293×</p><p class="q-t">restauration plus rapide après un échec</p></div>
+<div class="q rise" style="--i:5"><p class="q-n">8×</p><p class="q-t">moins de changements en échec</p></div>
+</div>
+<p class="kicker rise" style="--i:6">Le lead time, c’est le coût du changement mesuré en jours.</p>
+<p class="foot">DORA / Google Cloud (2024), <i>Accelerate State of DevOps Report</i> · méthode : Forsgren, Humble &amp; Kim (2018), <i>Accelerate</i>, IT Revolution.</p>
+<aside>(≈ 1 min) Comment mesurer ? DORA mesure les équipes depuis dix ans. En 2024, les équipes élite déploient 182 fois plus souvent que les moins performantes, avec un lead time 127 fois plus court, et… 8 fois moins d’échecs. Ce n’est pas vitesse OU qualité : les meilleurs ont les deux, parce que leur coût du changement est bas. Le lead time, c’est l’indicateur le plus simple à suivre.</aside>
+</section>
+
+<section id="signaux" class="paper">
+<p class="eyebrow rise" style="--i:0">AUTO-DIAGNOSTIC</p>
+<h2 class="title rise" style="--i:1">Cinq signes que le coût s’envole</h2>
+<div class="sigs">
+<div class="sig rise" style="--i:2"><p class="sig-n">1</p><p class="sig-t">Une petite modification touche plusieurs composants.</p></div>
+<div class="sig rise" style="--i:3"><p class="sig-n">2</p><p class="sig-t">Une fonctionnalité traverse plusieurs services ou dépôts.</p></div>
+<div class="sig rise" style="--i:4"><p class="sig-n">3</p><p class="sig-t">Des régressions apparaissent là où personne ne regardait.</p></div>
+<div class="sig rise" style="--i:5"><p class="sig-n">4</p><p class="sig-t">Livrer demande de coordonner plusieurs équipes.</p></div>
+<div class="sig rise" style="--i:6"><p class="sig-n">5</p><p class="sig-t">On repousse une idée produit « parce que c’est trop dur à changer ».</p></div>
+</div>
+<p class="kicker rise" style="--i:7">Trois sur cinq ? Le coût du changement pilote déjà votre roadmap.</p>
+<aside>(≈ 1 min) Moment interactif : levez la main mentalement à chaque signe que vous reconnaissez. Le cinquième est le plus grave : quand le produit renonce à des idées parce que le code ne suit plus, l’entreprise cesse d’avancer au rythme du marché.</aside>
+</section>
+
+<section id="ia" class="accent center" data-transition="fade">
+<p class="eyebrow rise" style="--i:0">PARTIE 2 · L’IA</p>
+<h2 class="statement rise" style="--i:1">Et l’IA dans tout ça ?</h2>
+<p class="statement-sub rise" style="--i:2">Elle écrit du code de plus en plus vite. Or écrire, c’était la pointe de l’iceberg.</p>
+<aside>(≈ 30 s) Bascule. Tout le monde parle de l’IA qui code plus vite. Souvenez-vous de l’iceberg : écrire le code, c’était la partie visible. Est-ce que l’IA réduit aussi ce qu’il y a sous l’eau ? Regardons les mesures.</aside>
+</section>
+
+<section id="mesures">
+<h2 class="title rise" style="--i:0">La promesse, puis les mesures</h2>
+<div class="four three">
+<div class="m m-promise rise" style="--i:1"><p class="m-tag m-tag-b">PROMESSE</p><p class="m-n">55,8 %</p><p class="m-t">plus vite pour coder une tâche neuve et isolée avec Copilot.</p><p class="m-s">Peng, Kalliamvakou, Cihon &amp; Demirer (2023), essai contrôlé, arXiv:2302.06590</p></div>
+<div class="m rise" style="--i:2"><p class="m-tag">LIVRAISON</p><p class="m-n">−7,2 %</p><p class="m-t">de stabilité de livraison pour +25 % d’adoption de l’IA, et −1,5 % de débit.</p><p class="m-s">DORA / Google Cloud (2024), <i>Accelerate State of DevOps Report</i></p></div>
+<div class="m rise" style="--i:3"><p class="m-tag">CODE</p><p class="m-n">×2</p><p class="m-t">de code réécrit moins de deux semaines après son ajout, projeté vs 2021.</p><p class="m-s">GitClear (2024), <i>Coding on Copilot</i>, rapport d’industrie</p></div>
+</div>
+<p class="kicker rise" style="--i:5">Sur du code neuf, l’IA brille. Sur un système existant, elle hérite de son coût du changement.</p>
+<aside>(≈ 1 min) La promesse : GitHub mesure 55 % de gain sur une tâche neuve et isolée. Mais à l’échelle des équipes, DORA 2024 : plus d’adoption de l’IA, c’est un peu moins de débit et nettement moins de stabilité. Et GitClear voit le code « jetable », réécrit sous deux semaines, doubler. Conclusion : l’IA va très vite sur la pointe de l’iceberg, pas forcément sur le reste.</aside>
+</section>
+
+<section id="metr" class="deep">
+<p class="eyebrow rise" style="--i:0">METR · 2025 · ESSAI RANDOMISÉ · DEVS EXPÉRIMENTÉS SUR LEURS PROPRES DÉPÔTS</p>
+<h2 class="title rise" style="--i:1">Plus rapides avec l’IA… vraiment ?</h2>
+<div class="vs2">
+<div class="metr-col rise" style="--i:2">
+<p class="metr-l">CE QU’ILS ONT RESSENTI</p>
+<p class="metr-n">−20 %</p>
+<p class="metr-s">de temps : « l’IA m’a rendu plus rapide »</p>
+</div>
+<div class="metr-col-r fragment">
+<p class="metr-l metr-l-a">CE QU’ON A MESURÉ</p>
+<p class="metr-n metr-n-a">+19 %</p>
+<p class="metr-s">de temps : ils étaient plus lents</p>
+</div>
+</div>
+<p class="punch fragment">Près de 40 points d’écart entre le ressenti et la réalité.</p>
+<p class="foot">Becker, Rush, Barnes &amp; Rein (2025), <i>Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity</i>, arXiv:2507.09089. Essai contrôlé randomisé : 16 devs, 246 tâches.</p>
+<aside>(≈ 1 min) Le chiffre le plus troublant. METR a pris des développeurs open source expérimentés, sur leurs propres gros projets qu’ils connaissent par cœur, et a tiré au sort les tâches avec et sans IA. Laisser le ressenti s’afficher : « Après coup, ils estimaient avoir gagné 20 % de temps. » Pause. CLIC. « En réalité, ils ont mis 19 % de temps EN PLUS. » Laisser le silence. CLIC. Près de 40 points d’écart. Avant l’étude, ils prédisaient même 24 % de gain. Moralité : sur un système existant, le coût du changement ne se ressent pas, il se mesure.</aside>
+</section>
+
+<section id="amplificateur" class="deep">
+<h2 class="title rise" style="--i:0">L’IA amplifie le système qu’elle trouve</h2>
+<div class="vs">
+<div class="v rise" style="--i:1">
+<h3 class="v-h">Système modulaire et testé</h3>
+<ul class="v-list"><li>Changements petits et locaux</li><li>Tests qui répondent en secondes</li><li>L’agent vérifie et se corrige seul</li></ul>
+<p class="v-r c-blue">→ l’IA accélère la livraison</p>
+</div>
+<div class="v v-bad rise" style="--i:2">
+<h3 class="v-h">Système couplé, peu testé</h3>
+<ul class="v-list"><li>Chaque changement déborde</li><li>Aucun filet de sécurité</li><li>Plus de code généré, plus de surface</li></ul>
+<p class="v-r c-amber">→ l’IA accélère la dette</p>
+</div>
+</div>
+<p class="kicker rise" style="--i:3">Chaque ligne générée est une ligne à maintenir.</p>
+<p class="foot">Doernenburg (2026), <i>Assessing internal quality while coding with an agent</i>, martinfowler.com.</p>
+<aside>(≈ 1 min) L’IA est un multiplicateur. Erik Doernenburg, chez Thoughtworks, l’a observé en codant avec un agent : le code marche, mais les agents ont une forte tendance à introduire de la dette technique (cache inutile, cas qui n’existent pas, logique dupliquée). Sur un système modulaire avec des tests rapides, l’agent fait de petits changements, lance les tests, se corrige : on va vraiment plus vite. Sur un système couplé sans tests, il produit plus de code, plus vite, sans filet : on fabrique de la dette en accéléré. Le code est un passif : chaque ligne générée augmente le coût du prochain changement.</aside>
+</section>
+
+<section id="tokens">
+<p class="eyebrow rise" style="--i:0">MARTINFOWLER.COM · 2026 · 150 000 LIGNES ÉCRITES PAR DES AGENTS</p>
+<h2 class="title rise" style="--i:1">Pour un agent, le coût du changement se compte en tokens</h2>
+<div class="tk-row">
+<div class="rise" style="--i:2">
+<p class="tk-big">−83 %</p>
+<p class="tk-sub">de tokens lus par l’agent pour un même changement, après refactoring</p>
+</div>
+<div>
+<div class="cmp rise" style="--i:3"><p class="cmp-l">TOKENS LUS PAR CHANGEMENT</p><p class="cmp-v">159 564 → <span class="hl">27 360</span></p></div>
+<div class="cmp rise" style="--i:4"><p class="cmp-l">PLUS GROS FICHIER</p><p class="cmp-v">17 155 → <span class="hl">3 695</span> lignes</p></div>
+<div class="cmp rise" style="--i:5"><p class="cmp-l">TOKENS ÉCRITS</p><p class="cmp-v">≈ 2 000 → ≈ 2 000</p></div>
+</div>
+</div>
+<p class="kicker rise" style="--i:6">L’agent n’écrit pas moins. Il lit moins.</p>
+<p class="foot">Edwards-Alexander (2026), <i>The Economic Benefit of Refactoring</i>, martinfowler.com. Une seule expérience, à confirmer.</p>
+<aside>(≈ 1 min) Une expérience récente publiée sur le site de Martin Fowler. Une application de 150 000 lignes, entièrement écrite par des agents, avec un fichier de 17 000 lignes. L’auteur demande le même changement à un agent neuf, mesure les tokens, jette le changement, refactore un peu, recommence. Résultat : 83 % de tokens lus en moins pour le même changement. Ce qui ne bouge pas : les tokens écrits. Le coût du changement d’un agent, c’est ce qu’il doit lire et comprendre. Exactement comme pour nous. C’est une seule expérience, mais le mécanisme est limpide.</aside>
+</section>
+
+<section id="parallele" class="paper">
+<p class="eyebrow rise" style="--i:0">LE PARALLÈLE</p>
+<h2 class="title rise" style="--i:1">Ce qui aide un humain aide un agent</h2>
+<table class="tbl rise" style="--i:2">
+<tr class="tbl-head"><th class="th-l">Pour un humain</th><th class="th-l">Pour un agent IA</th></tr>
+<tr><td>Modules petits, frontières claires</td><td>Moins de contexte à charger, moins d’erreurs</td></tr>
+<tr class="band"><td>Tests rapides et fiables</td><td>Une boucle de feedback : l’agent se corrige seul</td></tr>
+<tr><td>Ownership clair, peu de dépendances</td><td>Des changements locaux, sans effet de bord</td></tr>
+<tr class="band"><td>Décisions documentées (ADR, README)</td><td>Un contexte explicite (AGENTS.md, specs)</td></tr>
+<tr><td>Petits incréments, PR courtes</td><td>Une revue humaine possible, un risque contenu</td></tr>
+</table>
+<p class="kicker rise" style="--i:3">Réduire le coût du changement, c’est préparer le terrain pour l’IA.</p>
+<p class="foot">Appuis : Edwards-Alexander (2026), −83 % de tokens lus après refactoring · Doernenburg (2026), dette introduite par les agents · martinfowler.com.</p>
+<aside>(≈ 1 min) Le parallèle qui m’intéresse le plus : tout ce qui baisse le coût du changement pour un humain le baisse aussi pour un agent. Un module petit, c’est moins de contexte à charger. Des tests rapides, c’est la boucle de feedback qui permet à l’agent de se corriger. Une décision documentée, c’est du contexte qu’il n’a pas à deviner. Investir dans la qualité, c’est investir dans l’IA.</aside>
+</section>
+
+<section id="lockin">
+<p class="eyebrow rise" style="--i:0">SWITCHING COST, VERSION IA</p>
+<h2 class="title rise" style="--i:1">Ne recréez pas la dette chez votre fournisseur d’IA</h2>
+<div class="lock">
+<div class="rise" style="--i:2">
+<p class="quote">« Ce qu’on perd en quittant ce qu’on a construit. »</p>
+<p class="quote-src">Le coût du changement, définition n° 1</p>
+</div>
+<div class="steps">
+<div class="st rise" style="--i:3"><x-icon name="Book" class="st-icon"></x-icon><div><h3 class="st-h">Formats ouverts</h3><p class="st-p">Règles et contexte en Markdown et AGENTS.md, pas enfermés dans un outil.</p></div></div>
+<div class="st rise" style="--i:4"><x-icon name="Check" class="st-icon"></x-icon><div><h3 class="st-h">Un harnais agnostique</h3><p class="st-p">Tests, specs et évaluations rejouables, quel que soit le modèle.</p></div></div>
+<div class="st rise" style="--i:5"><x-icon name="Link" class="st-icon"></x-icon><div><h3 class="st-h">Des modèles interchangeables</h3><p class="st-p">Les modèles changent souvent : on doit pouvoir en changer.</p></div></div>
+</div>
+</div>
+<aside>(≈ 1 min) Retour à la définition de départ, version switching cost. Comme GTA Online pour Rockstar, ce qu’on construit autour d’un outil d’IA peut devenir ce qu’on n’ose plus quitter. Les modèles changent tous les quelques mois. Donc : nos règles et notre contexte dans des formats ouverts, un harnais de tests et d’évaluations qui ne dépend pas d’un modèle, et la possibilité d’en changer.</aside>
+</section>
+
+<section id="lundi" class="deep">
+<p class="eyebrow rise" style="--i:0">PASSER À L’ACTION</p>
+<h2 class="title rise" style="--i:1">Ce qu’on peut faire dès lundi</h2>
+<div class="sigs">
+<div class="todo rise" style="--i:2"><p class="todo-n">1</p><p class="todo-t"><b>Mesurer</b> le lead time des 20 dernières PR : où ça bloque ?</p></div>
+<div class="todo rise" style="--i:3"><p class="todo-n">2</p><p class="todo-t"><b>Cartographier</b> les dépendances, dans le code et entre équipes.</p></div>
+<div class="todo rise" style="--i:4"><p class="todo-n">3</p><p class="todo-t"><b>Cibler</b> les quelques modules qui concentrent le ralentissement.</p></div>
+<div class="todo rise" style="--i:5"><p class="todo-n">4</p><p class="todo-t"><b>Découpler</b> et clarifier qui possède quoi.</p></div>
+<div class="todo rise" style="--i:6"><p class="todo-n">5</p><p class="todo-t"><b>Rendre le système lisible pour l’IA</b> : tests rapides, contexte écrit.</p></div>
+</div>
+<p class="us rise" style="--i:7"><b>Repère DORA 2024, équipes élite</b> : lead time &lt; 1 jour · ≈ 5 % de changements en échec · restauration &lt; 1 h. <b>Et nous ?</b></p>
+<aside>(≈ 1 min) Concrètement, cinq actions. La première ne coûte presque rien : prendre les 20 dernières PR et regarder où le temps part. Le repère : les équipes élite de DORA 2024 livrent en moins d’un jour, avec environ 5 % de changements en échec et une restauration en moins d’une heure. Question à la salle : où en sommes-nous ?</aside>
+</section>
+
+<section id="fin" class="deep center">
+<p class="closing-q rise" style="--i:0">« Réduire le coût du changement, c’est concevoir des systèmes plus autonomes et plus modulaires. »</p>
+<p class="closing-src rise" style="--i:1">QMates, 2026</p>
+<p class="closing glow">GTA VI arrive 13 ans après GTA V. L’IA va vite. Votre système doit pouvoir suivre.</p>
+<p class="foot">Questions ?</p>
+<aside>(≈ 45 s) Pour conclure : réduire le coût du changement, ce n’est pas un chantier de code isolé, c’est architecture, organisation et livraison ensemble. GTA VI arrive treize ans après GTA V. L’IA, elle, va très vite. La question, c’est : est-ce que notre système peut suivre ? Merci, place aux questions.</aside>
+</section>
+
+<section id="references">
+<h2 class="title">Références : études scientifiques</h2>
+<div class="refs">
+<div>
+<p class="ref">Becker, Rush, Barnes &amp; Rein (2025). <i>Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity</i>. arXiv:2507.09089.</p>
+<p class="ref">Peng, Kalliamvakou, Cihon &amp; Demirer (2023). <i>The Impact of AI on Developer Productivity: Evidence from GitHub Copilot</i>. arXiv:2302.06590.</p>
+<p class="ref">Tornhill &amp; Borg (2022). <i>Code Red: The Business Impact of Code Quality</i>. arXiv:2203.04374.</p>
+<p class="ref">Besker, Martini &amp; Bosch (2019). <i>Software developer productivity loss due to technical debt</i>. Journal of Systems and Software, 156, 41–61.</p>
+</div>
+<div>
+<p class="ref">Lehman (1980). <i>Programs, Life Cycles, and Laws of Software Evolution</i>. Proceedings of the IEEE, 68(9).</p>
+<p class="ref">Parnas (1972). <i>On the Criteria To Be Used in Decomposing Systems into Modules</i>. Communications of the ACM, 15(12).</p>
+<p class="ref">Boehm &amp; Basili (2001). <i>Software Defect Reduction Top 10 List</i>. IEEE Computer, 34(1).</p>
+<p class="ref">Conway (1968). <i>How Do Committees Invent?</i> Datamation, 14(4).</p>
+</div>
+</div>
+<p class="foot">arXiv = prépublication, pas encore relue par les pairs.</p>
+<aside>Slide d’annexe, à laisser affichée pendant les questions ou à partager avec le support.</aside>
+</section>
+
+<section id="references-2">
+<h2 class="title">Références : ouvrages, articles et rapports</h2>
+<div class="refs">
+<div>
+<h3 class="ref-h">Ouvrages</h3>
+<p class="ref">Boehm (1981). <i>Software Engineering Economics</i>. Prentice-Hall.</p>
+<p class="ref">Brooks (1975). <i>The Mythical Man-Month</i>. Addison-Wesley.</p>
+<p class="ref">Beck (1999). <i>Extreme Programming Explained</i>. Addison-Wesley.</p>
+<p class="ref">Forsgren, Humble &amp; Kim (2018). <i>Accelerate</i>. IT Revolution.</p>
+<h3 class="ref-h ref-h2">martinfowler.com</h3>
+<p class="ref">Fowler (2007). <i>Design Stamina Hypothesis</i>.</p>
+<p class="ref">Fowler (2019). <i>Is High Quality Software Worth the Cost?</i></p>
+</div>
+<div>
+<p class="ref">Doernenburg (2026). <i>Assessing internal quality while coding with an agent</i>.</p>
+<p class="ref">Edwards-Alexander (2026). <i>The Economic Benefit of Refactoring</i>.</p>
+<h3 class="ref-h ref-h2">Rapports et enquêtes d’industrie</h3>
+<p class="ref">DORA / Google Cloud (2024). <i>Accelerate State of DevOps Report</i>.</p>
+<p class="ref">Stripe (2018). <i>The Developer Coefficient</i>.</p>
+<p class="ref">GitClear (2024). <i>Coding on Copilot</i>.</p>
+<p class="ref">QMates (2026). <i>Coût du changement en développement logiciel</i>.</p>
+</div>
+</div>
+<aside>Slide d’annexe.</aside>
+</section>
+
+</body></html>
